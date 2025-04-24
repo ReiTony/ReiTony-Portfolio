@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import { FaChevronDown, FaFileAlt } from "react-icons/fa";
+import { FaChevronDown, FaFileAlt, FaLinkedin } from "react-icons/fa";
 
 function Hero({ handleScroll }) {
   return (
@@ -24,7 +24,7 @@ function Hero({ handleScroll }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-       👋 Hi! I am Antonio Miguel Cariño
+        👋 Hi! I am Antonio Miguel Cariño
       </motion.h1>
 
       <p className="text-xl mb-8 text-gray-700">
@@ -39,7 +39,7 @@ function Hero({ handleScroll }) {
         />
       </p>
 
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 flex-wrap justify-center">
         <button
           onClick={() => handleScroll("#contact")}
           style={{ backgroundColor: "#69b67e", color: "#ffffff" }}
@@ -56,6 +56,16 @@ function Hero({ handleScroll }) {
           className="p-2 rounded-lg shadow hover:opacity-90 transition-all"
         >
           <FaFileAlt size={20} />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/antoncarino/" 
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ backgroundColor: "#0a66c2", color: "#ffffff" }}
+          className="p-2 rounded-lg shadow hover:opacity-90 transition-all"
+        >
+          <FaLinkedin size={20} />
         </a>
       </div>
 

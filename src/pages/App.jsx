@@ -37,7 +37,7 @@ export default function Portfolio() {
   return (
     <div
       className="min-h-screen w-full font-sans transition-all duration-300"
-      style={{ backgroundColor: "#cbd5e1", color: "#0f172a" }}
+      style={{ backgroundColor: "#0b1120", color: "#0f172a" }}
     >
       <div
         style={{ backgroundColor: "#02182B" }}
