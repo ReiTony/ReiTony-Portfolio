@@ -11,7 +11,7 @@ function Hero({ handleScroll }) {
       style={{ backgroundColor: "#cbd5e1", color: "#0f172a" }}
     >
       <motion.img
-        src="/images/DSC_0089 2x2.JPG"
+        src="/images/profile.jpg"
         alt="Portfolio Image"
         className="w-32 h-32 md:w-48 md:h-48 rounded-full mb-4 shadow-xl ring-4 ring-blue-300 object-cover"
         initial={{ opacity: 0, scale: 0.8 }}
@@ -49,7 +49,7 @@ function Hero({ handleScroll }) {
         </button>
 
         <a
-          href="Cariño_CV.pdf"
+          href="/Cariño_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           style={{ backgroundColor: "#f88379", color: "#ffffff" }}
