@@ -84,7 +84,7 @@ export default function Portfolio() {
       <section
         id="contact"
         className="py-40 w-full shadow-inner border-t"
-        style={{ backgroundColor: "#ecfdf5" }}
+        style={{ backgroundColor: "#ecfdf5", color: "#000000" }}
       >
         <h2 className="text-4xl font-bold text-center mb-12">Get in Touch</h2>
         <div className="flex justify-center">
