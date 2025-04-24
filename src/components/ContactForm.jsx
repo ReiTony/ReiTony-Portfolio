@@ -56,13 +56,15 @@ function ContactForm() {
                 placeholder="Your Message"
                 className="w-full p-3 border rounded-lg h-40 bg-white text-black placeholder-gray-600 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
-              <Button
-                type="submit"
-                disabled={isSubmitting}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition-all disabled:bg-blue-300"
-              >
-                Send Message
-              </Button>
+              <div className="flex justify-center">
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition-all disabled:bg-blue-300"
+                >
+                  Send Message
+                </Button>
+              </div>
             </Form>
           )}
         </Formik>
