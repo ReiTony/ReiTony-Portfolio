@@ -4,7 +4,7 @@ function Navigation({ handleScroll }) {
   return (
     <nav
       className="fixed top-0 left-0 w-full py-4 px-6 flex flex-col md:flex-row items-center justify-center shadow-md z-50"
-      style={{ backgroundColor: '#f8fafc', color: '#1f2937' }} // Light background with dark text
+      style={{ backgroundColor: '#1e293b"', color: 'white' }} 
     >
       <ul className="flex flex-col md:flex-row md:justify-center space-y-2 md:space-y-0 md:space-x-6 w-full md:w-auto">
         <li>

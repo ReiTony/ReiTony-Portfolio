@@ -37,7 +37,7 @@ export default function Portfolio() {
   return (
     <div
       className="min-h-screen w-full font-sans transition-all duration-300"
-      style={{ backgroundColor: "#02182B", color: "#ffffff" }}
+      style={{ backgroundColor: "#cbd5e1", color: "#0f172a" }}
     >
       <div
         style={{ backgroundColor: "#02182B" }}
@@ -52,42 +52,44 @@ export default function Portfolio() {
       {/* Projects Section */}
       <section
         id="projects"
-        className="py-40 px-4 md:px-8 w-full border-y"
-        style={{ backgroundColor: "#031625", color: "#ffffff" }}
+        className="py-40 w-full border-y"
+        style={{ backgroundColor: "#cbd5e1", color: "#0f172a" }}
       >
-        <motion.h2
-          className="text-4xl font-bold mb-16 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          Projects
-        </motion.h2>
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <motion.h2
+            className="text-4xl font-bold mb-16 text-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            Projects
+          </motion.h2>
 
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 px-4 md:px-16 w-full"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
-        >
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              openModal={openModal}
-            />
-          ))}
-        </motion.div>
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 w-full"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+          >
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                openModal={openModal}
+              />
+            ))}
+          </motion.div>
+        </div>
       </section>
 
       {/* Contact Section */}
       <section
         id="contact"
-        className="py-40 w-full shadow-inner border-t"
-        style={{ backgroundColor: "#ecfdf5", color: "#000000" }}
+        className="py-40 w-full border-t shadow-inner"
+        style={{ backgroundColor: "#cbd5e1", color: "#0f172a" }}
       >
-        <h2 className="text-4xl font-bold text-center mb-12">Get in Touch</h2>
-        <div className="flex justify-center">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <h2 className="text-4xl font-bold text-center mb-12">Get in Touch</h2>
           <ContactForm />
         </div>
       </section>
